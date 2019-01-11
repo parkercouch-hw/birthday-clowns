@@ -1,28 +1,17 @@
-/* .container {
-  max-width: 900px;
+.nav-wrapper {
+  padding: 0 10px;
+}
+
+.form-container {
+  max-width: 800px;
   margin: 10px auto;
-} */
-
-
-.nav-bar {
-  background-color: #ddd;
-  min-height: 50px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: center;
 }
 
-.nav-link {
-  display: inline-block;
-  margin: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 28px;
-  color: black;
+.hidden {
+  display: none;
+  visibility: hidden;
 }
 
-.nav-link:hover {
-  color: red;
-  background-color: blue;
+div.selects-container .select-month input {
+  width: 100px;
 }

@@ -6,19 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Auth Boilerplate</title>
 
-    <!-- Materialize CSS -->
-      <link rel="stylesheet" href="/css/materialize.min.css" type="text/css">
-  <!-- <link rel="stylesheet" href="/css/normalize.css" type="text/css"> -->
+  <!-- Materialize CSS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/css/materialize.min.css" type="text/css">
   <link rel="stylesheet" href="/css/styles.css" type="text/css">
 </head>
 <body>
 
-  <% include ./partials/header.ejs %> 
+  <% include partials/header %> 
 
   <div class="container">
+    <% include partials/alerts %> 
     <%- body %>
   </div>
-     <!-- Materialize JS -->
-     <script src="/js/materialize.min.js"></script> 
+
+  <!-- Materialize JS -->
+  <script src="/js/materialize.min.js"></script> 
+  <script src="/js/scripts.js"></script> 
 </body>
 </html>

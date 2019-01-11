@@ -1,7 +1,28 @@
 <header>
-  <nav class="nav-bar">
-    <a href="/"><div class="nav-link">Home</div></a>
-    <a href="/auth/login"><div class="nav-link">Login</div></a>
-    <a href="/auth/signup"><div class="nav-link">Sign Up</div></a>
+  <nav>
+    <div class="nav-wrapper purple lighten-2">
+      <a href="/" class="brand-logo"><i class="material-icons">face</i>Website</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <% if (user) { %>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/profile">Profile</a></li>
+          <% if (user.admin) { %>
+          <li><a href="/profile/admins">Super Secret Admin Page</a></li>
+          <% } %>
+          <li><a href="/auth/logout">Logout</a></li>
+        </ul>
+      <% } else { %>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/auth/login">Login</a></li>
+          <li><a href="/auth/signup">Sign Up</a></li>
+        </ul>
+      <% } %>
+
+    </div>
   </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="/auth/login">Login</a></li>
+    <li><a href="/auth/signup">Sign Up</a></li>
+  </ul>
 </header>
