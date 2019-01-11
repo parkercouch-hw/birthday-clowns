@@ -79,7 +79,7 @@ function signUpValidate (req, res, next) {
       console.log('Error: ', err);
       req.flash('error', 'A server error occured. Please try again. Or don\'t...');
       res.render('error');
-    })
+    });
   }
 }
 
